@@ -1,0 +1,470 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */img,legend{border:0}legend,td,th{padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}table{border-collapse:collapse;border-spacing:0}
+
+/* Initialize body for responsive */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    -webkit-transition: opacity .6s ease-in-out;
+    -moz-transition: opacity .6s ease-in-out;
+    -ms-transition: opacity .6s ease-in-out;
+    -o-transition: opacity .6s ease-in-out;
+    transition: opacity .6s ease-in-out;
+}
+
+/* Add the grid system */
+section, footer, span.anchor {
+    background: url("/img/overlay.png");
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+.row:before, .row:after {
+    display: table;
+    content: "";
+}
+
+.row:after {
+    clear: both;
+}
+
+.col-3 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 66.13%;
+}
+
+.col-1 {
+    width: 32.26%;
+}
+
+
+/* Style of the site */
+nav {
+    position: fixed;
+    background-color: rgba(23, 23, 23, 0.75);
+    width: 100%;
+}
+
+nav > a > .brand {
+    display: inline-block;
+    color: #fff;
+    background-image: url('/img/logo-colored-white-right.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38px;
+    width: 100px;
+    margin-top: 13px;
+    margin-left: 24px;
+}
+
+nav > ul {
+    display: inline-block;
+    float: right;
+    line-height: 38px;
+    -webkit-padding-start: 0;
+}
+
+nav > ul > li {
+    display: inline;
+    list-style: none;
+    margin-right: 24px;
+}
+
+nav > ul > li > a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 200;
+    -webkit-transition: color 250ms ease-out;
+    -moz-transition: color 250ms ease-out;
+    -o-transition: color 250ms ease-out;
+    transition: color 250ms ease-out;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+nav > ul > li > a.highlight {
+    color: #1dd2af;
+    border: solid 1px #1dd2af;
+    line-height: 36px;
+    -webkit-transition: background-color 250ms ease-out;
+    -moz-transition: background-color 250ms ease-out;
+    -o-transition: background-color 250ms ease-out;
+    transition: background-color 250ms ease-out;
+}
+
+nav > ul > li > a:hover {
+    color: #1dd2af;
+}
+
+nav > ul > li > a.highlight:hover {
+    color: #fff;
+    background-color: #1dd2af;
+}
+
+header {
+    color: #fff;
+    background-image: url('/img/bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+}
+
+header > .title {
+    padding-top: 250px;
+    margin: 0;
+    font-weight: 100;
+}
+
+header > .subtitle {
+    margin-top: 3rem;
+    font-size: 120%;
+}
+
+header > .subscribe {
+    max-width: 720px;
+    min-width: 320px;
+    margin: 3rem auto 0 auto;
+}
+
+header > .subscribe > form > input[type="email"] {
+    color: #000;
+    border: 0;
+    width: 65%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+header > .subscribe > form > input[type="submit"]  {
+    color: #1dd2af;
+    background-color: rgba(23, 23, 23, 0.75);
+    border: solid 1px #1dd2af;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    -webkit-transition: background-color 250ms ease-out, color 250ms ease-out;
+    -moz-transition: background-color 250ms ease-out, color 250ms ease-out;
+    -o-transition: background-color 250ms ease-out, color 250ms ease-out;
+    transition: background-color 250ms ease-out, color 250ms ease-out;
+}
+
+header > .subscribe > form > input[type="submit"]:hover {
+    color: #fff;
+    background-color: rgba(29, 210, 175, 1);
+}
+
+header > .social {
+    margin-top: 3rem;
+}
+
+header > .social a {
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+    -webkit-transition: color 250ms ease-out;
+    -moz-transition: color 250ms ease-out;
+    -o-transition: color 250ms ease-out;
+    transition: color 250ms ease-out;
+}
+
+header > .social a:hover {
+    color: #21dfb9;
+}
+
+.fa.ba-tw:before {
+    content: "\f099";
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+section.philosophy {
+    color: #232323;
+    background-color: #eee;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+section.philosophy > h2 {
+    font-weight: 100;
+    line-height: 3rem;
+}
+
+section.features {
+    background-color: #fff;
+    color: #232323;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+section.features > h2 {
+    font-weight: 100;
+    margin-top: 0;
+    padding-bottom: 1rem;
+}
+
+section.features > div > div > h3 {
+    border-bottom: solid 1px #232323;
+    width: 86%;
+    font-size: 1.26rem;
+    font-weight: 100;
+    line-height: 3rem;
+    margin: 0 auto;
+}
+
+section.features > div > div > p {
+    width: 86%;
+    line-height: 1.4rem;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+section.projects {
+    background-color: #eee;
+    color: #232323;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+section.projects > h2 {
+    font-weight: 100;
+    margin-top: 0;
+    padding-bottom: 1rem;
+}
+
+section.projects > div > div {
+    color: #232323;
+    background-color: #fff;
+    text-align: center;
+    padding: 0 0 2rem 0;
+}
+
+section.projects > div > div > h3 {
+    color: #fff;
+    background-color: #232323;
+    width: 100%;
+    font-size: 1.26rem;
+    font-weight: 100;
+    line-height: 4.2rem;
+    margin: 0 auto;
+}
+
+section.projects > div > div > p {
+    width: 86%;
+    line-height: 1.4rem;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+section.projects > div > div > a.github {
+    color: #fff;
+    text-decoration: none;
+    background-color: #2980b9;
+    display: block;
+    width: 52%;
+    line-height: 1.4rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section.projects > div > div > a.github > i.fa-github {
+    vertical-align: -8%;
+}
+
+section.projects > div > div > a.github:visited,
+section.projects > div > div > a.github:hover {
+    color: #fff;
+}
+
+section.projects > div > div > a.github:hover {
+    background-color: #3498db;
+}
+
+section.ending {
+    color: #232323;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+section.ending > span {
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #232323;
+}
+
+footer > .connected {
+    max-width: 720px;
+    min-width: 320px;
+    padding-top: 3rem;
+    margin: 0 auto;
+}
+
+footer > .connected > span{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+footer > .subscribe {
+    max-width: 720px;
+    min-width: 320px;
+    margin: 1.4rem auto 0 auto;
+}
+
+footer > .subscribe > form > input[type="email"] {
+    color: #000;
+    border: 0;
+    width: 65%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+footer > .subscribe > form > input[type="submit"] {
+    color: #1dd2af;
+    background-color: rgba(23, 23, 23, 0.75);
+    border: solid 1px #1dd2af;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    -webkit-transition: background-color 250ms ease-out, color 250ms ease-out;
+    -moz-transition: background-color 250ms ease-out, color 250ms ease-out;
+    -o-transition: background-color 250ms ease-out, color 250ms ease-out;
+    transition: background-color 250ms ease-out, color 250ms ease-out;
+}
+
+footer > .subscribe > form > input[type="submit"]:hover {
+    color: #fff;
+    background-color: rgba(29, 210, 175, 1);
+}
+
+footer > .social {
+    width: 160px;
+    margin: 3rem auto 0 auto;
+}
+
+footer > .social a {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-decoration: none;
+    -webkit-transition: color 250ms ease-out;
+    -moz-transition: color 250ms ease-out;
+    -o-transition: color 250ms ease-out;
+    transition: color 250ms ease-out;
+}
+
+footer > .social a:hover {
+    color: #21dfb9;
+}
+
+footer > .copy {
+    color: #ababab;
+    width: 100%;
+    padding: 1.5rem 0;
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+/* Style of the site for responsive */
+@media screen and (max-width: 767px) {
+    nav > a > .brand {
+        margin-left: 4px;
+        height: 36px;
+        width: 94px;
+    }
+
+    nav > ul {
+        font-size: 85%;
+    }
+
+    nav > ul > li {
+        margin-right: 0px;
+    }
+
+    nav > ul > li:last-child {
+        margin-right: 4px;
+    }
+
+    nav > ul > li > a {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    header {
+        font-size: 1rem;
+    }
+
+    header > .title {
+        padding-top: 132px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav > a > .brand {
+        height: 36px;
+        width: 36px;
+    }
+
+    nav > ul > li > a {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    header > .title {
+        padding-top: 76px;
+    }
+
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+
+    .col-1, .col-2, .col-3 {
+        width: 100%;
+    }
+}

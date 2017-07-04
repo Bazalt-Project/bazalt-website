@@ -1,0 +1,30 @@
+{
+  "name": "bazalt-website",
+  "version": "1.0.0",
+  "description": "The website of http://www.bazalt.io/",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bazalt-Project/bazalt-website.git"
+  },
+  "keywords": [
+    "bazalt",
+    "query",
+    "website"
+  ],
+  "author": "Tacyniak Boris <boris.tacyniak@free.fr> (http://www.bazalt.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bazalt-Project/bazalt-website/issues"
+  },
+  "homepage": "https://github.com/Bazalt-Project/bazalt-website#readme",
+  "devDependencies": {
+    "compression": "^1.6.0",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1"
+  }
+}
